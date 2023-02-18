@@ -6,3 +6,10 @@ function getElementById(inputId) {
 }
 
 
+function getElementByIdText(inputIdtext) {
+    const areaValueOfA = document.getElementById(inputIdtext);
+    const areaNumber = areaValueOfA.innerText;
+    return areaNumber;
+}
+
+

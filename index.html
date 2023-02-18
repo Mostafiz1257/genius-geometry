@@ -46,7 +46,7 @@
           <img class="" src="images/triangle.png" alt="Shoes" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Trangle</h2>
+          <h2 id="trangle" class="card-title">Trangle</h2>
           <p>Area(A)=0.5*a*b</p>
           <input id="tri-area-a" class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="cm">
           <input id="tri-area-b" class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="cm">
@@ -60,7 +60,7 @@
           <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Rectangle</h2>
+          <h2 id="rectangle" class="card-title">Rectangle</h2>
           <p>Area(A)=a*b</p>
           <input id="rec-area-a" class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="cm">
           <input id="rec-area-b" class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="cm">
@@ -119,15 +119,38 @@
           <h2 class="card-title">Ellips</h2>
           <p>Area(A)=3.14*a*b</p>
           <input id="ellips-area-a" class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="cm">
-          <input it="ellips-area-b" class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="cm">
+          <input id="ellips-area-b" class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="cm">
           <div class="card-actions">
             <button id="ellips-btn" class="btn btn-primary">Calculate</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="card-details w-[30%] mx-auto bg-red-400 ">
+    <div class="card-details w-[30%] mx-auto  ">
       <h1 class="text-xl text-center font-bold underline mt-5 ">Area Calculation</h1>
+      <div class="overflow-x-auto">
+        <table class="table w-full">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Name</th>
+              <th>Result</th>
+              <th>Unit</th>
+            </tr>
+          </thead>
+          <tbody id="table-container">
+            <!-- row 1 -->
+            <!-- <tr>
+              <th>1</th>
+              <td>Cy Ganderton</td>
+              <td>Quality </td>
+              <td>Blue</td>
+            </tr> -->
+            
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
