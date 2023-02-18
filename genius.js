@@ -30,7 +30,7 @@ document.getElementById('trangle-btn').addEventListener('click', function () {
     <td>${serial}</td>
     <td>${elementName}</td>
     <td>${trangleArea}</td>
-    <td>${cmSquare}</td>
+    <td>cm<sup>2</sup></td>
     `
     container.appendChild(tr);
 })
@@ -60,7 +60,7 @@ document.getElementById('rectangle-btn').addEventListener('click', function () {
     <td>${serial}</td>
     <td>${elementName}</td>
     <td>${rectangleArea}</td>
-    <td>${cmSquare}</td>
+    <td>cm<sup>2</sup></td>
     ` 
     container.appendChild(tr);
 })
@@ -80,7 +80,7 @@ document.getElementById('peralleogram-btn').addEventListener('click', function (
     <td>${serial}</td>
     <td>${elementName}</td>
     <td>${peralleoArea}</td>
-    <td>${cmSquare}</td>
+    <td>cm<sup>2</sup></td>
     `
     container.appendChild(tr);
 })
@@ -100,7 +100,7 @@ document.getElementById('rohumbos-btn').addEventListener('click', function () {
     <td>${serial}</td>
     <td>${elementName}</td>
     <td>${rohumbosArea}</td>
-    <td>${cmSquare}</td>
+    <td>cm<sup>2</sup></td>
     `
     container.appendChild(tr); 
 })
@@ -120,7 +120,7 @@ document.getElementById('pentagon-btn').addEventListener('click', function () {
     <td>${serial}</td>
     <td>${elementName}</td>
     <td>${pentagonArea}</td>
-    <td>${cmSquare}</td>
+    <td>cm<sup>2</sup></td>
     `
     container.appendChild(tr);
 })
@@ -140,7 +140,7 @@ document.getElementById('ellips-btn').addEventListener('click', function () {
     <td>${serial}</td>
     <td>${elementName}</td>
     <td>${ellipsAreaToFixed}</td>
-    <td>${cmSquare}</td>
+    <td>cm<sup>2</sup></td>
     `
     container.appendChild(tr);
 })
