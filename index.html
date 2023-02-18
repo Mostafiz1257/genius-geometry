@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Genius-Geometry</title>
 </head>
+
 <body>
   <header>
     <div class="navbar bg-base-100 shadow-2xl lg:px-12">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </label>
           <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-       
-           
+
+
           </ul>
         </div>
         <a class="btn btn-ghost normal-case text-xl">Interactive</a>
@@ -33,6 +38,99 @@
       </div>
     </div>
   </header>
-  
+  <!-- card section  -->
+  <section class="lg:px-12 flex">
+    <div class="product-details mt-5 w-[70%]  grid lg:grid-cols-3 gap-4">
+      <div class="card w-full bg-base-100 shadow-xl ">
+        <figure class="px-5 pt-5">
+          <img class="" src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Trangle</h2>
+          <p>Area(A)=0.5*a*b</p>
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="a">
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="b">
+          <div class="card-actions">
+            <button class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Rectangle</h2>
+          <p>Area(A)=a*b</p>
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="a">
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="b">
+          <div class="card-actions">
+            <button class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Peralleogram</h2>
+          <p>Area(A)=a*b</p>
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="a">
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="b">
+          <div class="card-actions">
+            <button class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Rohumbos</h2>
+          <p>Area(A)=0.5*a*b</p>
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="a">
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="b">
+          <div class="card-actions">
+            <button class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Pentagon</h2>
+          <p>Area(A)=0.5*a*b</p>
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="a">
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="b">
+          <div class="card-actions">
+            <button class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Ellips</h2>
+          <p>Area(A)=3.14*a*b</p>
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="a">
+         <input class="bg-gray-200 pl-1" type="email" name="" id="" placeholder="b">
+          <div class="card-actions">
+            <button class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-details w-[30%] mx-auto bg-red-400 ">
+<h1 class="text-xl text-center font-bold underline mt-5 ">Area Calculation</h1>
+    </div>
+  </section>
+
 </body>
+
 </html>
