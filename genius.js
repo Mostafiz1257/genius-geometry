@@ -1,14 +1,12 @@
+let serial=0;
 // Located page with blog button 
 document.getElementById('blog-btn').addEventListener('click', function () {
-    window.location.href = 'question.html';
+    window.location.href = 'question-ans.html';
 })
 
 // First card 
 document.getElementById('trangle-btn').addEventListener('click', function () {
-    
-
-
-
+    serial+=1;
     const elementName=getElementByIdText('trangle')
     const cmSquare=getElementByIdText('tri-cm-square')
     const tringleValueA = getElementById('tri-area-a');
@@ -26,11 +24,10 @@ document.getElementById('trangle-btn').addEventListener('click', function () {
         alert("Provide valid input");
         return;
     }
-
     const container=document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML=`
-    <td>${1}</td>
+    <td>${serial}</td>
     <td>${elementName}</td>
     <td>${trangleArea}</td>
     <td>${cmSquare}</td>
@@ -40,7 +37,7 @@ document.getElementById('trangle-btn').addEventListener('click', function () {
 
 // second card
 document.getElementById('rectangle-btn').addEventListener('click', function () {
-
+    serial+=1;
     const elementName=getElementByIdText('rectangle');
     const cmSquare=getElementByIdText('rec-cm-square');
     const recValueA = getElementById('rec-area-a');
@@ -57,36 +54,30 @@ document.getElementById('rectangle-btn').addEventListener('click', function () {
         alert("Provide valid input");
         return;
     }
-
-
     const container=document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML=`
-    <td>${1}</td>
+    <td>${serial}</td>
     <td>${elementName}</td>
     <td>${rectangleArea}</td>
     <td>${cmSquare}</td>
-    `
+    ` 
     container.appendChild(tr);
-
-
 })
 
 // third card
 document.getElementById('peralleogram-btn').addEventListener('click', function () {
-
-
+    serial+=1;
     const elementName=getElementByIdText('peralleogram');
     const cmSquare=getElementByIdText('peralleo-cm-square');
     const peralleoValueA = getElementById('peralleo-area-a');
     const peralleoValueB = getElementById('peralleo-area-b');
     const peralleoAreaFixed = parseFloat(peralleoValueA) * parseFloat(peralleoValueB);
     const peralleoArea = peralleoAreaFixed.toFixed(2);
-
     const container=document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML=`
-    <td>${1}</td>
+    <td>${serial}</td>
     <td>${elementName}</td>
     <td>${peralleoArea}</td>
     <td>${cmSquare}</td>
@@ -96,19 +87,17 @@ document.getElementById('peralleogram-btn').addEventListener('click', function (
 
 // four card
 document.getElementById('rohumbos-btn').addEventListener('click', function () {
-
-
+    serial+=1;
     const elementName=getElementByIdText('rohumbos');
     const cmSquare=getElementByIdText('rohumbos-cm-square');
     const peralleoValueA = getElementById('rombos-area-a');
     const peralleoValueB = getElementById('rombos-area-b');
     const rohumbosAreaFixed = 0.5 * parseFloat(peralleoValueA) * parseFloat(peralleoValueB);
     const rohumbosArea =rohumbosAreaFixed.toFixed(2);
-    
     const container=document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML=`
-    <td>${1}</td>
+    <td>${serial}</td>
     <td>${elementName}</td>
     <td>${rohumbosArea}</td>
     <td>${cmSquare}</td>
@@ -118,19 +107,17 @@ document.getElementById('rohumbos-btn').addEventListener('click', function () {
 
 // fifth card
 document.getElementById('pentagon-btn').addEventListener('click', function () {
-
-
+    serial+=1;
     const elementName=getElementByIdText('pentagon');
     const cmSquare=getElementByIdText('pentagon-cm-sqpare');
     const pentagonValueA = getElementById('pentagon-area-a');
     const pentagonValueB = getElementById('pentagon-area-b');
     const pentagonAreaFixed = 0.5 * parseFloat(pentagonValueA) * parseFloat(pentagonValueB);
     const pentagonArea = pentagonAreaFixed.toFixed(2);
-
     const container=document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML=`
-    <td>${1}</td>
+    <td>${serial}</td>
     <td>${elementName}</td>
     <td>${pentagonArea}</td>
     <td>${cmSquare}</td>
@@ -140,18 +127,17 @@ document.getElementById('pentagon-btn').addEventListener('click', function () {
 
 // sixth card
 document.getElementById('ellips-btn').addEventListener('click', function () {
-
+    serial+=1;
     const elementName=getElementByIdText('ellips');
     const cmSquare=getElementByIdText('ellips-cm-sqpare');
     const ellipsValueA = getElementById('ellips-area-a');
     const ellipsValueB = getElementById('ellips-area-b');
     const ellipsArea = 3.1416 * parseFloat(ellipsValueA) * parseFloat(ellipsValueB);
     const ellipsAreaToFixed = ellipsArea.toFixed(2);
-
     const container=document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML=`
-    <td>${1}</td>
+    <td>${serial}</td>
     <td>${elementName}</td>
     <td>${ellipsAreaToFixed}</td>
     <td>${cmSquare}</td>
